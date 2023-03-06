@@ -55,12 +55,12 @@ export default function App() {
   };
 
   return (
-    <div className="grid h-screen place-items-center bg-slate-800 text-slate-200">
+    <div className="grid h-screen place-items-center bg-purple-100 text-purple-200">
       {/* App */}
-      <section className="perspective w-11/12 max-w-md rounded-md bg-slate-600 px-6 py-10">
-        <header className="ml-auto flex w-1/4 justify-end gap-4 rounded-md bg-slate-800 px-2 py-4 font-semibold">
-          <p>앞: {heads} </p>
-          <p>뒤: {tails} </p>
+      <section className="perspective w-11/12 max-w-md rounded-md bg-white px-6 py-10 shadow-xl">
+        <header className="ml-auto flex w-3/12 justify-end gap-4 border-b border-b-purple-600 px-1 py-2 font-semibold text-purple-700">
+          <p>앞 : {heads} </p>
+          <p>뒤 : {tails} </p>
         </header>
 
         <div
@@ -77,14 +77,14 @@ export default function App() {
 
         <footer className="flex justify-between">
           <button
-            className="rounded-md bg-slate-800 px-6 py-4 transition hover:bg-slate-900 disabled:cursor-not-allowed disabled:bg-slate-400"
+            className="rounded-md bg-purple-800 px-4 py-2 transition hover:bg-purple-900 disabled:cursor-not-allowed disabled:bg-purple-400"
             onClick={handleToss}
             disabled={disabled}
           >
             던지기
           </button>
           <button
-            className="rounded-md bg-slate-300 py-4 px-6 text-slate-900 transition hover:bg-slate-200"
+            className="rounded-md bg-purple-300 py-2 px-4 text-purple-900 transition hover:bg-purple-200"
             onClick={handleReset}
           >
             리셋
